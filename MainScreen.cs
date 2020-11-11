@@ -191,5 +191,10 @@ namespace GUI___Multi_From_and_Panel
 
             dataGridView2.DataSource = SWHnd.getAllShopOrWholesales(dbConn.getConn());
         }
+
+        private void helloBox3_TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello, Test Successfully");
+        }
     }
 }
