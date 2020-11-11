@@ -236,7 +236,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(0, 26);
+            this.panel2.Location = new System.Drawing.Point(11, 97);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(694, 282);
@@ -337,7 +337,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.displayBtn);
@@ -1060,6 +1059,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1009, 538);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
