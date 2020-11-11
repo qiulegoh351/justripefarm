@@ -14,7 +14,7 @@ namespace GUI___Multi_From_and_Panel
         private int quantity;
         private int supplierID;
         private DateTime purchaseDate;
-        
+        private DateTime expiryDate;
 
         public Stock()
         {
@@ -40,6 +40,12 @@ namespace GUI___Multi_From_and_Panel
             get { return purchaseDate; }
             set { purchaseDate = value; }
         }
-       
+
+        public DateTime ExpiryDate
+        {
+            get { return expiryDate; }
+            set { expiryDate = value; }
+        }
+
     }
 }
