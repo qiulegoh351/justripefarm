@@ -235,7 +235,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(0, 32);
+            this.panel2.Location = new System.Drawing.Point(12, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(694, 282);
             this.panel2.TabIndex = 37;
@@ -335,7 +335,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.displayBtn);
@@ -371,7 +370,7 @@
             this.panel6.Controls.Add(this.clearBtn2);
             this.panel6.Controls.Add(this.addBtn2);
             this.panel6.Controls.Add(this.label14);
-            this.panel6.Location = new System.Drawing.Point(8, 213);
+            this.panel6.Location = new System.Drawing.Point(8, 206);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(893, 273);
             this.panel6.TabIndex = 41;
@@ -1047,6 +1046,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(900, 509);
             this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
