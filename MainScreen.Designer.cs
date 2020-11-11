@@ -101,7 +101,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -353,6 +352,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.panel1);
@@ -498,7 +498,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.dateTimePicker6);
             this.panel5.Controls.Add(this.dateTimePicker7);
             this.panel5.Controls.Add(this.comboBox5);
@@ -508,7 +507,7 @@
             this.panel5.Controls.Add(this.label25);
             this.panel5.Controls.Add(this.label26);
             this.panel5.Controls.Add(this.label27);
-            this.panel5.Location = new System.Drawing.Point(513, 9);
+            this.panel5.Location = new System.Drawing.Point(530, 50);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(651, 316);
@@ -1002,13 +1001,6 @@
             this.panel3.Size = new System.Drawing.Size(1173, 460);
             this.panel3.TabIndex = 18;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(245, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(231, 22);
-            this.textBox3.TabIndex = 31;
-            // 
             // dateTimePicker6
             // 
             this.dateTimePicker6.Location = new System.Drawing.Point(271, 190);
@@ -1095,7 +1087,6 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1200, 626);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnShopWholesale);
             this.Controls.Add(this.btnMachines);
@@ -1200,7 +1191,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker foundationDateSoW;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DateTimePicker dateTimePicker6;
         private System.Windows.Forms.DateTimePicker dateTimePicker7;
         private System.Windows.Forms.ComboBox comboBox5;
