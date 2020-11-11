@@ -110,6 +110,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -240,7 +241,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(165, 157);
+            this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(925, 347);
@@ -352,7 +353,6 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.panel2);
-            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.panel1);
@@ -498,6 +498,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.dateTimePicker6);
             this.panel5.Controls.Add(this.dateTimePicker7);
             this.panel5.Controls.Add(this.comboBox5);
@@ -507,7 +508,7 @@
             this.panel5.Controls.Add(this.label25);
             this.panel5.Controls.Add(this.label26);
             this.panel5.Controls.Add(this.label27);
-            this.panel5.Location = new System.Drawing.Point(530, 50);
+            this.panel5.Location = new System.Drawing.Point(694, 9);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(651, 316);
@@ -1080,12 +1081,20 @@
             this.label27.TabIndex = 22;
             this.label27.Text = "Name :";
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(245, 66);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(192, 22);
+            this.textBox3.TabIndex = 31;
+            // 
             // Main_Screen_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(1200, 626);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnShopWholesale);
@@ -1200,5 +1209,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
