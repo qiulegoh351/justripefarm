@@ -196,10 +196,5 @@ namespace GUI___Multi_From_and_Panel
         {
             MessageBox.Show("Hello, Test Successfully");
         }
-
-        private void HelloTextBox_TextChanged(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello, Test Successfully");
-        }
     }
 }
