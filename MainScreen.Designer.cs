@@ -110,7 +110,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -498,7 +497,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.dateTimePicker6);
             this.panel5.Controls.Add(this.dateTimePicker7);
             this.panel5.Controls.Add(this.comboBox5);
@@ -1081,13 +1079,6 @@
             this.label27.TabIndex = 22;
             this.label27.Text = "Name :";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(245, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 22);
-            this.textBox3.TabIndex = 31;
-            // 
             // Main_Screen_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1209,6 +1200,5 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox3;
     }
 }
