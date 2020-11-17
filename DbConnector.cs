@@ -24,10 +24,9 @@ namespace GUI___Multi_From_and_Panel
                     instance = new DbConnector();
                 return instance;
             }
-
         }
 
-        public DbConnector()
+        private DbConnector()
         {
             try
             {
