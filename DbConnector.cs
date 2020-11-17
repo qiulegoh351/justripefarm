@@ -8,6 +8,8 @@ using MySql.Data.MySqlClient;
 
 namespace GUI___Multi_From_and_Panel
 {
+    //Declare as sealed which will ensure that it cannot be inherited. 
+    //This is going to be useful when you are dealing with the nested class. 
     public sealed class DbConnector
     {
         MySqlConnection conn;
@@ -15,6 +17,7 @@ namespace GUI___Multi_From_and_Panel
         private String logFile = "DatabaseConnection_log.txt";
         private StreamWriter writer;
 
+        //Create a private static variable that is going to hold a reference to the single created instance of the class if any.
         private static DbConnector instance;
         public static DbConnector Instance
         {
@@ -26,6 +29,9 @@ namespace GUI___Multi_From_and_Panel
             }
         }
 
+        //constructor should be private and parameterless.
+        //because it is not allowed the class to be instantiated from outside the class. 
+        //It only instantiates from within the class.
         private DbConnector()
         {
             try
@@ -35,6 +41,10 @@ namespace GUI___Multi_From_and_Panel
             catch (IOException e) { }
         }
 
+        //Create a public static property/method which will return the single created instance of the singleton class. 
+        //This method or property first check if an instance of the singleton class is available or not. 
+        //If the singleton instance is available, then it returns that singleton instance 
+        //otherwise it will create an instance and then return that instance.
         public string connect()
         {
             string connStr = "server=localhost;user=dbcli;database=demojustripedb;port=3306;password=dbcli123";
