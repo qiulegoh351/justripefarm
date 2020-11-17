@@ -22,6 +22,9 @@ namespace GUI___Multi_From_and_Panel
             main.FormClosed += new FormClosedEventHandler(FormClosed);
             main.Show();
             Application.Run();
+
+            singleton.Instance.print();
+            Console.ReadLine();
         }
 
         static void FormClosed(object sender, FormClosedEventArgs e)
