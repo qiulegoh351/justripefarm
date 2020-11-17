@@ -50,16 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.displayBtn = new System.Windows.Forms.Button();
             this.labourerName = new System.Windows.Forms.TextBox();
             this.labourerAge = new System.Windows.Forms.TextBox();
@@ -70,7 +60,19 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnTestAdd = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.HelloBox4 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.foundationDateSoW = new System.Windows.Forms.DateTimePicker();
@@ -111,8 +113,7 @@
             this.f11 = new System.Windows.Forms.Button();
             this.f12 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.HelloBox4 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.exitLabourerPanel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -237,7 +238,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(11, 97);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(694, 282);
             this.panel2.TabIndex = 37;
@@ -337,6 +338,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.exitLabourerPanel);
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.displayBtn);
             this.panel4.Controls.Add(this.labourerName);
@@ -363,6 +365,109 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(479, 107);
             this.dataGridView1.TabIndex = 15;
+            // 
+            // displayBtn
+            // 
+            this.displayBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayBtn.Location = new System.Drawing.Point(430, 202);
+            this.displayBtn.Name = "displayBtn";
+            this.displayBtn.Size = new System.Drawing.Size(95, 31);
+            this.displayBtn.TabIndex = 14;
+            this.displayBtn.Text = "Display";
+            this.displayBtn.UseVisualStyleBackColor = true;
+            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
+            // 
+            // labourerName
+            // 
+            this.labourerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labourerName.Location = new System.Drawing.Point(103, 66);
+            this.labourerName.Multiline = true;
+            this.labourerName.Name = "labourerName";
+            this.labourerName.Size = new System.Drawing.Size(124, 29);
+            this.labourerName.TabIndex = 13;
+            // 
+            // labourerAge
+            // 
+            this.labourerAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labourerAge.Location = new System.Drawing.Point(103, 105);
+            this.labourerAge.Multiline = true;
+            this.labourerAge.Name = "labourerAge";
+            this.labourerAge.Size = new System.Drawing.Size(124, 29);
+            this.labourerAge.TabIndex = 12;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(27, 143);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 28);
+            this.label18.TabIndex = 11;
+            this.label18.Text = "Gender :";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(29, 106);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(74, 28);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Age :";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labourerGender
+            // 
+            this.labourerGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labourerGender.FormattingEnabled = true;
+            this.labourerGender.Items.AddRange(new object[] {
+            "Male ",
+            "Female"});
+            this.labourerGender.Location = new System.Drawing.Point(103, 144);
+            this.labourerGender.Name = "labourerGender";
+            this.labourerGender.Size = new System.Drawing.Size(124, 28);
+            this.labourerGender.TabIndex = 9;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(27, 66);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 28);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Name :";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(292, 201);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(95, 31);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnTestAdd
+            // 
+            this.btnTestAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestAdd.Location = new System.Drawing.Point(152, 202);
+            this.btnTestAdd.Name = "btnTestAdd";
+            this.btnTestAdd.Size = new System.Drawing.Size(95, 31);
+            this.btnTestAdd.TabIndex = 4;
+            this.btnTestAdd.Text = "Test Add";
+            this.btnTestAdd.UseVisualStyleBackColor = true;
+            this.btnTestAdd.Click += new System.EventHandler(this.btnTestAdd_Click);
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(394, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(142, 32);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "New Labourer";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
@@ -464,109 +569,6 @@
             this.label12.Text = "Job Type :";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // displayBtn
-            // 
-            this.displayBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayBtn.Location = new System.Drawing.Point(547, 202);
-            this.displayBtn.Name = "displayBtn";
-            this.displayBtn.Size = new System.Drawing.Size(95, 31);
-            this.displayBtn.TabIndex = 14;
-            this.displayBtn.Text = "Display";
-            this.displayBtn.UseVisualStyleBackColor = true;
-            this.displayBtn.Click += new System.EventHandler(this.displayBtn_Click);
-            // 
-            // labourerName
-            // 
-            this.labourerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labourerName.Location = new System.Drawing.Point(103, 66);
-            this.labourerName.Multiline = true;
-            this.labourerName.Name = "labourerName";
-            this.labourerName.Size = new System.Drawing.Size(124, 29);
-            this.labourerName.TabIndex = 13;
-            // 
-            // labourerAge
-            // 
-            this.labourerAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labourerAge.Location = new System.Drawing.Point(103, 105);
-            this.labourerAge.Multiline = true;
-            this.labourerAge.Name = "labourerAge";
-            this.labourerAge.Size = new System.Drawing.Size(124, 29);
-            this.labourerAge.TabIndex = 12;
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(27, 143);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 28);
-            this.label18.TabIndex = 11;
-            this.label18.Text = "Gender :";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(29, 106);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(74, 28);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Age :";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labourerGender
-            // 
-            this.labourerGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labourerGender.FormattingEnabled = true;
-            this.labourerGender.Items.AddRange(new object[] {
-            "Male ",
-            "Female"});
-            this.labourerGender.Location = new System.Drawing.Point(103, 144);
-            this.labourerGender.Name = "labourerGender";
-            this.labourerGender.Size = new System.Drawing.Size(124, 28);
-            this.labourerGender.TabIndex = 9;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(27, 66);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 28);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Name :";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(405, 202);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(95, 31);
-            this.btnClear.TabIndex = 5;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnTestAdd
-            // 
-            this.btnTestAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestAdd.Location = new System.Drawing.Point(262, 202);
-            this.btnTestAdd.Name = "btnTestAdd";
-            this.btnTestAdd.Size = new System.Drawing.Size(95, 31);
-            this.btnTestAdd.TabIndex = 4;
-            this.btnTestAdd.Text = "Test Add";
-            this.btnTestAdd.UseVisualStyleBackColor = true;
-            this.btnTestAdd.Click += new System.EventHandler(this.btnTestAdd_Click);
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(394, 16);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(142, 32);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "New Labourer";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.HelloBox4);
@@ -586,10 +588,30 @@
             this.panel6.Controls.Add(this.addBtn2);
             this.panel6.Controls.Add(this.label14);
             this.panel6.Location = new System.Drawing.Point(6, 173);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(893, 273);
             this.panel6.TabIndex = 41;
+            // 
+            // HelloBox4
+            // 
+            this.HelloBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HelloBox4.Location = new System.Drawing.Point(92, 184);
+            this.HelloBox4.Multiline = true;
+            this.HelloBox4.Name = "HelloBox4";
+            this.HelloBox4.Size = new System.Drawing.Size(258, 29);
+            this.HelloBox4.TabIndex = 31;
+            this.HelloBox4.TextChanged += new System.EventHandler(this.HelloBox4_TextChanged);
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(12, 183);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(63, 28);
+            this.label28.TabIndex = 30;
+            this.label28.Text = "Hello :";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label23
             // 
@@ -764,7 +786,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(184, 51);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(145, 20);
             this.textBox3.TabIndex = 31;
@@ -772,7 +794,7 @@
             // dateTimePicker6
             // 
             this.dateTimePicker6.Location = new System.Drawing.Point(203, 154);
-            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker6.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker6.Name = "dateTimePicker6";
             this.dateTimePicker6.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker6.TabIndex = 30;
@@ -780,7 +802,7 @@
             // dateTimePicker7
             // 
             this.dateTimePicker7.Location = new System.Drawing.Point(203, 186);
-            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker7.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker7.Name = "dateTimePicker7";
             this.dateTimePicker7.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker7.TabIndex = 29;
@@ -789,7 +811,7 @@
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(184, 124);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(168, 21);
             this.comboBox5.TabIndex = 28;
@@ -797,7 +819,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(184, 90);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(109, 20);
             this.textBox2.TabIndex = 27;
@@ -1032,25 +1054,16 @@
             this.panel3.Size = new System.Drawing.Size(880, 374);
             this.panel3.TabIndex = 18;
             // 
-            // HelloBox4
+            // exitLabourerPanel
             // 
-            this.HelloBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelloBox4.Location = new System.Drawing.Point(92, 184);
-            this.HelloBox4.Multiline = true;
-            this.HelloBox4.Name = "HelloBox4";
-            this.HelloBox4.Size = new System.Drawing.Size(258, 29);
-            this.HelloBox4.TabIndex = 31;
-            this.HelloBox4.TextChanged += new System.EventHandler(this.HelloBox4_TextChanged);
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(12, 183);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(63, 28);
-            this.label28.TabIndex = 30;
-            this.label28.Text = "Hello :";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exitLabourerPanel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitLabourerPanel.Location = new System.Drawing.Point(565, 202);
+            this.exitLabourerPanel.Name = "exitLabourerPanel";
+            this.exitLabourerPanel.Size = new System.Drawing.Size(95, 31);
+            this.exitLabourerPanel.TabIndex = 16;
+            this.exitLabourerPanel.Text = "Exit";
+            this.exitLabourerPanel.UseVisualStyleBackColor = true;
+            this.exitLabourerPanel.Click += new System.EventHandler(this.exitLabourerPanel_Click);
             // 
             // Main_Screen_Form
             // 
@@ -1058,11 +1071,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(908, 425);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnShopWholesale);
             this.Controls.Add(this.btnMachines);
@@ -1178,5 +1191,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox HelloBox4;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button exitLabourerPanel;
     }
 }

@@ -12,6 +12,8 @@ namespace GUI___Multi_From_and_Panel
 {
     public partial class Main_Screen_Form : Form
     {
+        private bool exitWasClicked = false;
+
         public Main_Screen_Form()
         {
             InitializeComponent();
@@ -80,6 +82,7 @@ namespace GUI___Multi_From_and_Panel
 
         private void btnLabourer_Click(object sender, EventArgs e)
         {
+            exitWasClicked = false;
             panel1.Hide();
             panel2.Hide();
             panel3.Hide();
@@ -120,9 +123,30 @@ namespace GUI___Multi_From_and_Panel
             labr.Age = int.Parse(labourerAge.Text);
             labr.Gender = labourerGender.Text;
 
-            LabourerHandler labHnd = new LabourerHandler();
-            int recordCnt = labHnd.addNewLabourer(dbConn.getConn(), labr);
-            MessageBox.Show(recordCnt + " record has been inserted !!");
+            LabourerHandler labHnd = LabourerHandler.lb_instance;
+
+            if (exitWasClicked == false)
+            {
+                int recordCnt = labHnd.addNewLabourer(dbConn.getConn(), labr);
+                labHnd.Close();
+                MessageBox.Show(recordCnt + " record has been inserted !!");
+                labHnd.Open();
+            }
+            else if (exitWasClicked == true)
+            {
+                labHnd.Close();
+            }
+        }
+
+        private void exitLabourerPanel_Click(object sender, EventArgs e)
+        {
+            exitWasClicked = true;
+            panel1.Hide();
+            panel2.Hide();
+            panel3.Hide();
+            panel4.Hide();
+            panel5.Hide();
+            panel6.Hide();
         }
 
         private void displayBtn_Click(object sender, EventArgs e)
@@ -130,7 +154,7 @@ namespace GUI___Multi_From_and_Panel
             DbConnector dbConn = DbConnector.Instance;
             dbConn.connect();
 
-            LabourerHandler labHnd = new LabourerHandler();
+            LabourerHandler labHnd = LabourerHandler.lb_instance;
 
             dataGridView1.DataSource = labHnd.getAllLabourer(dbConn.getConn());
         }
