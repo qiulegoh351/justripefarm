@@ -10,7 +10,6 @@ namespace GUI___Multi_From_and_Panel
     class singleton
     {
         private static singleton instance;
-        static private readonly singleton _instance = null;
 
         private singleton()
         {
