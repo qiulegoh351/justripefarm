@@ -111,8 +111,9 @@ namespace GUI___Multi_From_and_Panel
         // Labourer Screen
         private void btnTestAdd_Click(object sender, EventArgs e)
         {
-            DbConnector dbConn = new DbConnector();
+            DbConnector dbConn = DbConnector.Instance;
             dbConn.connect();
+            dbConn.Close();
 
             Labourer labr = new Labourer();
             labr.Name = labourerName.Text;
@@ -126,7 +127,7 @@ namespace GUI___Multi_From_and_Panel
 
         private void displayBtn_Click(object sender, EventArgs e)
         {
-            DbConnector dbConn = new DbConnector();
+            DbConnector dbConn = DbConnector.Instance;
             dbConn.connect();
 
             LabourerHandler labHnd = new LabourerHandler();
@@ -152,7 +153,7 @@ namespace GUI___Multi_From_and_Panel
         // Shop Or Wholesales Screen
         private void addBtn2_Click(object sender, EventArgs e)
         {
-            DbConnector dbConn = new DbConnector();
+            DbConnector dbConn = DbConnector.Instance;
             dbConn.connect();
 
             ShopOrWholesales SW = new ShopOrWholesales();
@@ -184,7 +185,7 @@ namespace GUI___Multi_From_and_Panel
 
         private void displayBtn2_Click(object sender, EventArgs e)
         {
-            DbConnector dbConn = new DbConnector();
+            DbConnector dbConn = DbConnector.Instance;
             dbConn.connect();
 
             ShopOrWholesalesHandler SWHnd = new ShopOrWholesalesHandler();
