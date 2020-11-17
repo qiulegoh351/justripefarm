@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GUI___Multi_From_and_Panel
 {
     class singleton
     {
         private static singleton instance;
+        static private readonly singleton _instance = null;
 
         private singleton()
         {
             //initialise the objects
-            Console.WriteLine("Singleton constructor is called");
+            MessageBox.Show("Singleton constructor is called");
         }
 
         public static singleton Instance
@@ -22,9 +24,9 @@ namespace GUI___Multi_From_and_Panel
             {
                 if (instance == null)
                 {
-                    Console.WriteLine("The unique Singleton object will be created");
+                    MessageBox.Show("The unique Singleton object will be created");
                     instance = new singleton();
-                    Console.WriteLine("The Singleton object was created");
+                    MessageBox.Show("The Singleton object was created");
                 }
 
                 return instance;
@@ -33,7 +35,7 @@ namespace GUI___Multi_From_and_Panel
 
         public void print()
         {
-            Console.WriteLine("I'm a method from Singleton");
+            MessageBox.Show("I'm a method from Singleton");
         }
     }
 }
