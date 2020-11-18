@@ -43,9 +43,31 @@ namespace GUI___Multi_From_and_Panel
 
             MySqlCommand sqlComm = new MySqlCommand(sql, conn);
 
-            writer.WriteLine(" Succcessful Add New Labourer to Database!" + '\n' +
-            " Type: " + stock.Type + '\n' + " Quantity: " + stock.Quantity + '\n' + " Supplier ID: " + stock.SupplierID + '\n' + " Purchase Date: " + stock.PurchaseDate + " /nPurchase Date: " + ExpiryDate);
+            writer.WriteLine(" Succcessful Add New Stock to Database!" + '\n' +
+            " Type: " + stock.Type + '\n' + " Quantity: " + stock.Quantity + '\n' + " Supplier ID: " + stock.SupplierID + '\n' + " Purchase Date: " + stock.PurchaseDate + " /nPurchase Date: " + stock.
+            ExpiryDate);
             return sqlComm.ExecuteNonQuery();
+        }
+        public List<Stock> getAllStock(MySqlConnection conn)
+        {
+            List<Stock> listStock = new List<Stock>();
+            string sql = "SELECT * FROM stock";
+            MySqlCommand sqlComm = new MySqlCommand(sql, conn);
+            MySqlDataReader myReader;
+            myReader = sqlComm.ExecuteReader();
+            // Sends the CommandText to the Connection and builds a MySqlDataReader.
+
+            while (myReader.Read())
+            {
+                Stock aStock = new Stock();
+                aStock.Type = (int)myReader.GetValue(0);
+                aStock.Quantity = (int)myReader.GetValue(1);
+                aStock.SupplierID = (int)myReader.GetValue(2);
+                aStock.PurchaseDate= (DateTime)myReader.GetValue(4);
+                aStock.ExpiryDate = (DateTime)myReader.GetValue(4);
+                listStock.Add(aStock);
+            }
+            return listStock;
         }
 
         public void Close()

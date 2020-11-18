@@ -226,5 +226,53 @@ namespace GUI___Multi_From_and_Panel
         {
             MessageBox.Show("Hello, Test Successfully");
         }
+
+        //stock
+        private void testAdd_Click(object sender, EventArgs e)
+        {
+            DbConnector dbConn = DbConnector.Instance;
+            dbConn.connect();
+
+            Stock Stk = new Stock();
+            Stk.Type = int.Parse(typeSH.Text);
+            Stk.Quantity = int.Parse(quantitySH.Text);
+            Stk.SupplierID = int.Parse(supplierSH.Text);
+            Stk.PurchaseDate = DateTime.Parse(purchaseSH.Text);
+            Stk.ExpiryDate = DateTime.Parse(expirySH.Text);
+
+            StockHandler stockHnd = StockHandler.sh_instance;
+
+            if (exitWasClicked == false)
+            {
+                int recordCnt = stockHnd.addNewStock(dbConn.getConn(), Stk);
+                stockHnd.Close();
+                MessageBox.Show(recordCnt + " record has been inserted !!");
+                stockHnd.Open();
+            }
+            else if (exitWasClicked == true)
+            {
+                stockHnd.Close();
+            }
+
+        }
+
+        private void testClear_Click(object sender, EventArgs e)
+        {
+            typeSH.Text = string.Empty;
+            typeSH.Text = "";
+
+            quantitySH.Text = string.Empty;
+            quantitySH.Clear();
+            quantitySH.Text = "";
+
+            supplierSH.Text = string.Empty;
+            supplierSH.Text = "";
+
+            purchaseSH.Text = string.Empty;
+            purchaseSH.Text = "";
+
+            expirySH.Text = string.Empty;
+            expirySH.Text = "";
+        }
     }
 }
