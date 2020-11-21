@@ -43,9 +43,11 @@ namespace GUI___Multi_From_and_Panel
 
             MySqlCommand sqlComm = new MySqlCommand(sql, conn);
 
-            writer.WriteLine(" Succcessful Add New Stock to Database!" + '\n' +
+            writer.WriteLine(" \n Succcessful Add New Stock to Database!" + '\n' +
             " Type: " + stock.Type + '\n' + " Quantity: " + stock.Quantity + '\n' + " Supplier ID: " + stock.SupplierID + '\n' + " Purchase Date: " + stock.PurchaseDate + " /nPurchase Date: " + stock.
-            ExpiryDate);
+            ExpiryDate );
+
+            writer.WriteLine(" Great!! You have add the new stock !" );
             return sqlComm.ExecuteNonQuery();
         }
         public List<Stock> getAllStock(MySqlConnection conn)
